@@ -3,6 +3,7 @@ import { Cormorant_Garamond } from "next/font/google";
 import SignOutBtn from "./_components/SignOutBtn";
 import PlaidLink from "./_components/PlaidLink";
 import SyncButton from "./_components/SyncButton";
+import BriefingButton from "./_components/BriefingButton";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -110,6 +111,7 @@ export default async function Home() {
               <div className="flex flex-col items-center gap-3">
                 <PlaidLink />
                 <SyncButton />
+                <BriefingButton />
                 <SignOutBtn />
               </div>
             ) : (
